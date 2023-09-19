@@ -22,4 +22,4 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
-        working-directory: ./students/K33421/Novikov_Alexey
+        working-directory: ./students/K33421/laboratory_works/Novikov_Alexey
