@@ -18,6 +18,7 @@ theme:
         icon: material/lightbulb
         name: Переключиться на тёмную тему
     - media: "(prefers-color-scheme: dark)"
+      primary: black
       scheme: slate
       toggle:
         icon: material/lightbulb-outline
