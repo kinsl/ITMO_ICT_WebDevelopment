@@ -41,6 +41,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
+plugins:
+  - glightbox:
+      auto_caption: true
 extra_css:
 - css/custom.css
 nav:
