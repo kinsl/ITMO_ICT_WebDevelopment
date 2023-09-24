@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Данные о владельце</title>
+</head>
+<body>
+Фамилия: {{ owner.last_name }}<br>
+Имя: {{ owner.first_name }}<br>
+Дата рождения: {{ owner.birth_date }}<br><br>
+
+Водительское удостоверение:<br>
+Номер: {{ driver_licence.number }}<br>
+Тип: {{ driver_licence.type }}<br>
+Дата выдачи: {{ driver_licence.issue_date }}<br><br>
+
+Владения:<br>
+{% for ownership in owner.ownerships.all %}
+    Государственный номер: {{ ownership.car.number }}<br>
+    Марка: {{ ownership.car.brand }}<br>
+    Модель: {{ ownership.car.model }}<br>
+    Цвет: {{ ownership.car.color }}<br>
+    Дата начала: {{ ownership.start_date }}<br>
+    Дата конца: {{ ownership.end_date }}<br><br>
+{% endfor %}
+</body>
+</html>
