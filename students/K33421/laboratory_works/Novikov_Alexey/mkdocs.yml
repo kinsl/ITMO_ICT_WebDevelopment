@@ -51,3 +51,13 @@ nav:
       - lw1/task4.md
       - lw1/task5.md
       - lw1/conclusion.md
+  - "№2: Django":
+      - lw2/index.md
+      - lw2/settings.md
+      - lw2/models.md
+      - lw2/admin.md
+      - lw2/forms.md
+      - lw2/views.md
+      - lw2/router.md
+      - lw2/templates.md
+      - lw2/conclusion.md
