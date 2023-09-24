@@ -41,7 +41,7 @@
     - Отправляем на сервер с помощью `.send` и получаем результат с помощью `.recv`.
     - Закрываем соединение с помощью `.close`.
 
-    <p align="center">
-      <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task2/client_console.png" alt="client_console.img"></a>  
-      Консоль клиента
-    </p>
+    <figure markdown>
+      ![Консоль клиента](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task2/client_console.png)
+      <figcaption>Консоль клиента</figcaption>
+    </figure>
