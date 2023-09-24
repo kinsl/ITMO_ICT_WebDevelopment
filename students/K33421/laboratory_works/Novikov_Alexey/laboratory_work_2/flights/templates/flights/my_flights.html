@@ -1,0 +1,55 @@
+{% extends "flights/base.html" %}
+
+{% block title %}Мои рейсы{% endblock %}
+
+{% block content %}
+    <h2 class="mb-3">Мои рейсы</h2>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link {% if active_tab == "upcoming" %}active{% endif %}" href="{% url "view_bookings" "upcoming" %}">Предстоящие рейсы</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {% if active_tab == "past" %}active{% endif %}" href="{% url "view_bookings" "past" %}">Прошедшие рейсы</a>
+        </li>
+    </ul>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Авиакомпания</th>
+            <th scope="col">Тип</th>
+            <th scope="col">Гейт</th>
+            <th scope="col">Время отправления</th>
+            <th scope="col">Зарегистрирован?</th>
+            <th scope="col">Номер билета</th>
+            <th scope="col">Действие</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for booking in bookings %}
+            <tr class="align-middle">
+                <th scope="row"><a href="{% url "flight_details" booking.flight.id %}">{{ booking.flight.id }}</a></th>
+                <td>{{ booking.flight.airline }}</td>
+                <td>{{ booking.flight.get_type_display }}</td>
+                <td>{{ booking.flight.gate }}</td>
+                <td>{{ booking.flight.date }}</td>
+                <td>{{ booking.registered|yesno:"✅,❌" }}</td>
+                <td>{% if booking.ticket %}{{ booking.ticket }}{% endif %}</td>
+                {% if active_tab == "upcoming" %}
+                    <td>
+                        <a href="{% url "delete_booking" booking.id %}" class="btn btn-danger">Удалить бронь</a>
+                    </td>
+                {% else %}
+                    <td>
+                        <a href="{% url "give_feedback" booking.flight.id %}" class="btn btn-primary">Оставить отзыв</a>
+                    </td>
+                {% endif %}
+            </tr>
+        {% empty %}
+            <tr><td colspan="8">Нет рейсов.</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

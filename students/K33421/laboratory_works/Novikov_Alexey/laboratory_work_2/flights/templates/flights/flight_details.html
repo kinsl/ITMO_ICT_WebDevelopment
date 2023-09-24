@@ -1,0 +1,44 @@
+{% extends "flights/base.html" %}
+
+{% block title %}Информация о рейсе{% endblock %}
+
+{% block content %}
+    <h1>Пассажиры на {{ flight }}</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Фамилия и имя</th>
+            <th scope="col">Зарегистрирован?</th>
+            <th scope="col">Номер билета</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for booking in flight.bookings.all %}
+            <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td>{{ booking.user.last_name }} {{ booking.user.first_name }}</td>
+                <td>{{ booking.registered|yesno:"✅,❌" }}</td>
+                <td>{% if booking.ticket %}{{ booking.ticket }}{% endif %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Отзывы на рейс</h2>
+
+    {% for feedback in flight.feedbacks.all %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ feedback.user.last_name }} {{ feedback.user.first_name }} (Рейтинг: {{ feedback.rating }})
+                    <small class="text-muted">{{ feedback.date }}</small>
+                </h5>
+                <p class="card-text">{{ feedback.text }}</p>
+            </div>
+        </div>
+    {% empty %}
+        <p>Пока нет отзывов</p>
+    {% endfor %}
+{% endblock %}
