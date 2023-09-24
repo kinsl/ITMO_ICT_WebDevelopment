@@ -69,7 +69,7 @@
     При нажатии на кнопку Отправить вызывается функция, которая собирает значения этих 2 полей, объединяет их в JSON 
     и отправляет POST-запросом на сервер, затем обновляет страницу.
 
-    <p align="center">
-      <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task5/client.png" alt="client.img"></a>
-      Отображение в браузере
-    </p>
+    <figure markdown>
+      ![Отображение в браузере](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task5/client.png)
+      <figcaption>Отображение в браузере</figcaption>
+    </figure>

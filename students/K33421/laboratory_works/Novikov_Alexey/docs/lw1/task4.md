@@ -91,19 +91,19 @@
     Затем закрываем сокет.
 
     === "Клиент 1"
-    
-        <p align="center">
-          <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client1_console.png" alt="client1_console.img"></a>
-        </p>
+
+        <figure markdown>
+          ![Клиент 1](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client1_console.png)
+        </figure>
 
     === "Клиент 2"
-    
-        <p align="center">
-          <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client2_console.png" alt="client2_console.img"></a>
-        </p>
+
+        <figure markdown>
+          ![Клиент 2](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client2_console.png)
+        </figure>
 
     === "Клиент 3"
-    
-        <p align="center">
-          <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client3_console.png" alt="client3_console.img"></a>
-        </p>
+
+        <figure markdown>
+          ![Клиент 3](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task4/client3_console.png)
+        </figure>

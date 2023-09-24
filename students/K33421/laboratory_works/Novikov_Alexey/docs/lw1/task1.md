@@ -25,10 +25,10 @@
     чтобы сервер не прекратил работу после обработки первого запроса.
     - Оборачиваем цикл в `#!py3 try-except KeyboardInterrupt`, чтобы можно было завершить работу сервера по нажатию на ++ctrl+c++.
 
-    <p align="center">
-      <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task1/server_console.png" alt="server_console.img"></a>  
-      Консоль сервера
-    </p>
+    <figure markdown>
+      ![Консоль сервера](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task1/server_console.png)
+      <figcaption>Консоль сервера</figcaption>
+    </figure>
 
 === "Клиент"
 
@@ -39,8 +39,8 @@
     - Создаём объект сокета с помощью `#!py3 socket.socket(socket.AF_INET, socket.SOCK_DGRAM)`, 
     где `socket.AF_INET` отвечает за IPv4, а `socket.SOCK_DGRAM` за протокол UDP.
     - С помощью `.sendto` отправляем запрос серверу, а с помощью `.recvfrom` получаем ответ.
-    
-    <p align="center">
-      <img src="https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task1/client_console.png" alt="client_console.img"></a>  
-      Консоль клиента
-    </p>
+
+    <figure markdown>
+      ![Консоль клиента](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw1/task1/client_console.png)
+      <figcaption>Консоль клиента</figcaption>
+    </figure>
