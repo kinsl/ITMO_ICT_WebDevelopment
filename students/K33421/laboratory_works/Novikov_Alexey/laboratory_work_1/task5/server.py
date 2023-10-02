@@ -1,13 +1,12 @@
 import socket
 import json
 import sys
-from collections import namedtuple
+from collections import defaultdict
 from typing import Any
 
 
 class MyHTTPServer:
-    data = []
-    Grade = namedtuple("Grade", ["discipline", "value"])
+    data = defaultdict(list)
 
     def __init__(self, host: str, port: int):
         self.host = host
@@ -73,9 +72,7 @@ class MyHTTPServer:
             with open("index.html", encoding="utf-8") as f:
                 html_file = f.read()
 
-            grades = "<br>".join(
-                f"{grade.discipline}: {grade.value}" for grade in self.data
-            )
+            grades = "<br>".join(f"{discipline}: {', '.join(grades)}" for discipline, grades in self.data.items())
             html_file = html_file.replace("GRADES", grades)
             self.send_response(conn, html_file)
         else:
@@ -83,13 +80,11 @@ class MyHTTPServer:
                 html_file = f.read()
             self.send_response(conn, html_file, status_code="404 Not Found")
 
-    def handle_post_request(
-        self, path: str, body: dict, conn: socket.socket
-    ) -> None:
+    def handle_post_request(self, path: str, body: dict, conn: socket.socket) -> None:
         if path == "/":
             discipline = body.get("discipline", "")
             grade = body.get("grade", "")
-            self.data.append(self.Grade(discipline, grade))
+            self.data[discipline].append(grade)
 
             self.send_response(conn, "")
         else:
@@ -103,17 +98,8 @@ class MyHTTPServer:
             "Content-Type": "text/html; charset=utf-8",
             "Connection": "close",
         }
-        response_headers_raw = "".join(
-            f"{k}: {v}\r\n" for k, v in response_headers.items()
-        )
-        conn.sendall(
-            (
-                f"""HTTP/1.1 {status_code}\r\n"""
-                + response_headers_raw
-                + "\r\n"
-                + response
-            ).encode("utf-8")
-        )
+        response_headers_raw = "".join(f"{k}: {v}\r\n" for k, v in response_headers.items())
+        conn.sendall((f"""HTTP/1.1 {status_code}\r\n""" + response_headers_raw + "\r\n" + response).encode("utf-8"))
 
 
 if __name__ == "__main__":
