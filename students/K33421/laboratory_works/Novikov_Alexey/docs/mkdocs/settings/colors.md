@@ -25,7 +25,7 @@ theme:
       document.body.setAttribute("data-md-color-switching", "")
       var attr = this.getAttribute("data-md-color-scheme")
       document.body.setAttribute("data-md-color-scheme", attr)
-      var name = document.querySelector("#__code_2 code span.l")
+      var name = document.querySelector("#__code_0 code span.l")
       name.textContent = attr
       setTimeout(function() {
         document.body.removeAttribute("data-md-color-switching")
@@ -77,7 +77,7 @@ theme:
     button.addEventListener("click", function() {
       var attr = this.getAttribute("data-md-color-primary")
       document.body.setAttribute("data-md-color-primary", attr)
-      var name = document.querySelector("#__code_3 code span.l")
+      var name = document.querySelector("#__code_1 code span.l")
       name.textContent = attr.replace("-", " ")
     })
   })
@@ -128,7 +128,7 @@ theme:
     button.addEventListener("click", function() {
       var attr = this.getAttribute("data-md-color-accent")
       document.body.setAttribute("data-md-color-accent", attr)
-      var name = document.querySelector("#__code_4 code span.l")
+      var name = document.querySelector("#__code_2 code span.l")
       name.textContent = attr.replace("-", " ")
     })
   })
