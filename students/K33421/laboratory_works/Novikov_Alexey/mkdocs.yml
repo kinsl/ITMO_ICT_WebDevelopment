@@ -2,12 +2,7 @@ site_name: "Лабораторные работы"
 theme:
   name: material
   features:
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
     - navigation.indexes
-    - content.tooltips
-    - navigation.path
     - content.code.copy
   icon:
     repo: fontawesome/brands/github-alt
@@ -25,7 +20,6 @@ theme:
         name: Переключиться на светлую тему
   language: ru
 repo_url: https://github.com/kinsl/ITMO_ICT_WebDevelopment
-edit_uri: ''
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -33,20 +27,35 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 plugins:
   - glightbox:
       auto_caption: true
 extra_css:
 - css/custom.css
+- css/palette.scss
 nav:
+  - "№0: MkDocs":
+      - mkdocs/index.md
+      - mkdocs/advantages.md
+      - mkdocs/start.md
+      - "Конфигурация проекта":
+          - mkdocs/settings/index.md
+          - mkdocs/settings/colors.md
+          - mkdocs/settings/repository.md
+          - mkdocs/settings/assets.md
+          - mkdocs/settings/navigation.md
+          - mkdocs/settings/plugins.md
+          - mkdocs/settings/final.md
+      - mkdocs/ghpages.md
   - "№1: Сокеты":
       - lw1/index.md
       - lw1/task1.md
@@ -65,3 +74,23 @@ nav:
       - lw2/router.md
       - lw2/templates.md
       - lw2/conclusion.md
+  - "№3: DRF":
+      - lw3/index.md
+      - lw3/settings.md
+      - lw3/models.md
+      - lw3/admin.md
+      - lw3/serializers.md
+      - lw3/views.md
+      - lw3/router.md
+      - lw3/swagger.md
+      - lw3/conclusion.md
+  - "№4: Vue.js":
+      - lw4/index.md
+      - lw4/settings.md
+      - lw4/auth.md
+      - lw4/components.md
+      - lw4/layouts.md
+      - lw4/views.md
+      - lw4/router.md
+      - lw4/demo.md
+      - lw4/conclusion.md

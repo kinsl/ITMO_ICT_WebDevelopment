@@ -1,0 +1,12 @@
+Django==4.2.7
+django-cors-headers==4.3.0
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+django-allauth==0.58.1
+dj-rest-auth==5.0.1
+dj_database_url==2.1.0
+drf-spectacular==0.26.5
+gunicorn==21.2.0
+psycopg[c]==3.1.12
+python-dotenv==1.0.0
+starlette==0.31.1

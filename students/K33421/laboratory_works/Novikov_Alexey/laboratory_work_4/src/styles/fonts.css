@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Actay Wide';
+    src: local('Actay Wide'),
+        url('@/assets/fonts/ActayWide-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
