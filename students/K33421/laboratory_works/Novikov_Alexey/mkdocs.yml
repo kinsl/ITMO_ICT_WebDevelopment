@@ -74,3 +74,13 @@ nav:
       - lw2/router.md
       - lw2/templates.md
       - lw2/conclusion.md
+  - "№3: DRF":
+      - lw3/index.md
+      - lw3/settings.md
+      - lw3/models.md
+      - lw3/admin.md
+      - lw3/serializers.md
+      - lw3/views.md
+      - lw3/router.md
+      - lw3/swagger.md
+      - lw3/conclusion.md
