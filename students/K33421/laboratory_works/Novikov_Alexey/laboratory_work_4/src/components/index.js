@@ -1,0 +1,13 @@
+export { default as AdapterSlider } from './AdapterSlider.vue';
+export { default as Footer } from './Footer.vue';
+export { default as InfoContainer } from './InfoContainer.vue';
+export { default as Label } from './Label.vue';
+export { default as LoadingScreen } from './LoadingScreen.vue';
+export { default as LoginButton } from './LoginButton.vue';
+export { default as Select } from './Select.vue';
+export { default as Slider } from './Slider.vue';
+export { default as SubmitButton } from './SubmitButton.vue';
+export { default as TextArea } from './TextArea.vue';
+export { default as Title } from './Title.vue';
+export { default as TrainingSelect } from './TrainingSelect.vue';
+export { default as View } from './View.vue';
