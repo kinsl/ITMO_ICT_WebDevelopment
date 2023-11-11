@@ -28,7 +28,7 @@
     Для этой модели в табличном виде будем выводить только фамилию и имя, остальные параметры оставим по умолчанию.
 
     <figure markdown>
-      ![Список адаптеров](http://localhost:8000/img/lw3/admin/adapter.png)
+      ![Список адаптеров](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/adapter.png)
       <figcaption>Список адаптеров</figcaption>
     </figure>
 
@@ -51,12 +51,12 @@
     и поля для поиска. Затем перерегистрируем класс в админ-панели.
 
     <figure markdown>
-      ![Список пользователей](http://localhost:8000/img/lw3/admin/users.png)
+      ![Список пользователей](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/users.png)
       <figcaption>Список пользователей</figcaption>
     </figure>
 
     <figure markdown>
-      ![Информация о пользователе](http://localhost:8000/img/lw3/admin/user_details.png)
+      ![Информация о пользователе](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/user_details.png)
       <figcaption>Информация о пользователе</figcaption>
     </figure>
 
@@ -87,12 +87,12 @@
         как action в админ-панели.
     
         <figure markdown>
-          ![Список групп](http://localhost:8000/img/lw3/admin/groups.png)
+          ![Список групп](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/groups.png)
           <figcaption>Список групп</figcaption>
         </figure>
 
         <figure markdown>
-          ![Информация о группе](http://localhost:8000/img/lw3/admin/group_detail.png)
+          ![Информация о группе](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/group_detail.png)
           <figcaption>Информация о группе</figcaption>
         </figure>
     
@@ -108,7 +108,7 @@
         ```
     
         <figure markdown>
-          ![Список факультетов](http://localhost:8000/img/lw3/admin/faculties.png)
+          ![Список факультетов](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/faculties.png)
           <figcaption>Список факультетов</figcaption>
         </figure>    
 
@@ -124,12 +124,12 @@
         ```
     
         <figure markdown>
-          ![Список вопросов](http://localhost:8000/img/lw3/admin/questions.png)
+          ![Список вопросов](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/questions.png)
           <figcaption>Список вопросов</figcaption>
         </figure>    
 
         <figure markdown>
-          ![Информация о вопросе](http://localhost:8000/img/lw3/admin/question_details.png)
+          ![Информация о вопросе](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/question_details.png)
           <figcaption>Информация о вопросе</figcaption>
         </figure>    
 
@@ -145,11 +145,11 @@
         ```
     
         <figure markdown>
-          ![Список ответов](http://localhost:8000/img/lw3/admin/answers.png)
+          ![Список ответов](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/answers.png)
           <figcaption>Список ответов</figcaption>
         </figure>    
 
         <figure markdown>
-          ![Информация об ответе](http://localhost:8000/img/lw3/admin/answer_detail.png)
+          ![Информация об ответе](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/admin/answer_detail.png)
           <figcaption>Информация об ответе</figcaption>
         </figure>    

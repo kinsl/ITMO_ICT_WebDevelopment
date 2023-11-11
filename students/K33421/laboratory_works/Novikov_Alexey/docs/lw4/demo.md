@@ -5,17 +5,17 @@
 === "Вход"
 
     <figure markdown>
-      ![Страница входа](http://localhost:8000/img/lw4/login.png)
+      ![Страница входа](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw4/login.png)
     </figure>
 
 === "Опрос"
 
     <figure markdown>
-      ![Страница опроса](http://localhost:8000/img/lw4/survey.png)
+      ![Страница опроса](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw4/survey.png)
     </figure>
 
 === "Информация"
 
     <figure markdown>
-      ![Информационная страница](http://localhost:8000/img/lw4/info.png)
+      ![Информационная страница](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw4/info.png)
     </figure>

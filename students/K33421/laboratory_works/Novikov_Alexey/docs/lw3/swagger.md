@@ -25,31 +25,31 @@
 === "Список эндпоинтов"
 
     <figure markdown>
-      ![Список эндпоинтов](http://localhost:8000/img/lw3/swagger/main.png)
+      ![Список эндпоинтов](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/main.png)
     </figure>   
 
 === "Ответы"
 
     <figure markdown>
-      ![Ответы](http://localhost:8000/img/lw3/swagger/answers.png)
+      ![Ответы](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/answers.png)
     </figure>   
 
 === "Вопросы"
 
     <figure markdown>
-      ![Вопросы](http://localhost:8000/img/lw3/swagger/questions.png)
+      ![Вопросы](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/questions.png)
     </figure>   
 
 === "Проверка"
 
     <figure markdown>
-      ![Проверка](http://localhost:8000/img/lw3/swagger/check.png)
+      ![Проверка](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/check.png)
     </figure>   
 
 === "Редирект авторизации"
 
     <figure markdown>
-      ![Редирект авторизации](http://localhost:8000/img/lw3/swagger/redirect.png)
+      ![Редирект авторизации](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/redirect.png)
     </figure>   
 
     Здесь отсутствует ответ при статусе 200, так как эндпоинт возвращает редирект.
@@ -57,23 +57,23 @@
 === "Ссылка на авторизацию"
 
     <figure markdown>
-      ![Ссылка на авторизацию](http://localhost:8000/img/lw3/swagger/auth_url.png)
+      ![Ссылка на авторизацию](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/auth_url.png)
     </figure>   
 
 === "Группа"
 
     <figure markdown>
-      ![Группа](http://localhost:8000/img/lw3/swagger/group.png)
+      ![Группа](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/group.png)
     </figure>   
 
 === "Авторизация"
 
     <figure markdown>
-      ![Авторизация](http://localhost:8000/img/lw3/swagger/login.png)
+      ![Авторизация](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/login.png)
     </figure>   
 
 === "Обновление токена"
 
     <figure markdown>
-      ![Обновление токена](http://localhost:8000/img/lw3/swagger/refresh_token.png)
+      ![Обновление токена](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/lw3/swagger/refresh_token.png)
     </figure>   
