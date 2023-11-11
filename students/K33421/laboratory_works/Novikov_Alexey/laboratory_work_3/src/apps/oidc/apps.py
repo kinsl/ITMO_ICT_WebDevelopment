@@ -1,0 +1,10 @@
+from django.apps import AppConfig
+
+
+class AuthConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.oidc"
+    verbose_name = "Авторизация"
+
+    def ready(self):
+        from . import signals  # noqa
