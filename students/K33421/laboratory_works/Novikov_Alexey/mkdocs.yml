@@ -84,3 +84,13 @@ nav:
       - lw3/router.md
       - lw3/swagger.md
       - lw3/conclusion.md
+  - "№4: Vue.js":
+      - lw4/index.md
+      - lw4/settings.md
+      - lw4/auth.md
+      - lw4/components.md
+      - lw4/layouts.md
+      - lw4/views.md
+      - lw4/router.md
+      - lw4/demo.md
+      - lw4/conclusion.md
