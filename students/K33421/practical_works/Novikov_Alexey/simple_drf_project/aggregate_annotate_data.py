@@ -1,14 +1,14 @@
 import os
 
 import django
-from django.db.models import Max, Count
+from django.db.models import Min, Max, Count
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "simple_drf_project.settings")
 django.setup()
 
 from project_first_app.models import CarOwner, Car, Ownership, DrivingLicence
 
-oldest_licence = DrivingLicence.objects.aggregate(max_issue_date=Max("issue_date"))["max_issue_date"]
+oldest_licence = DrivingLicence.objects.aggregate(max_issue_date=Min("issue_date"))["max_issue_date"]
 
 newest_ownership = Ownership.objects.aggregate(max_start_date=Max("start_date"))["max_start_date"]
 
@@ -26,5 +26,5 @@ print(
     f"Количество машин для каждого водителя: {ownerships_counts_str}",
     f"Количество машин каждой марки: {cars_count_by_brands_str}",
     f"Автовладельцы, отсортированные по дате выдачи удостоверения: {sorted_owners}",
-    sep="\n",
+    sep="\n\n",
 )
