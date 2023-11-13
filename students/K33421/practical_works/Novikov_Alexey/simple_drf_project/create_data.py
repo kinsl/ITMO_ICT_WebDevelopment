@@ -38,4 +38,4 @@ licences = DrivingLicence.objects.bulk_create(
     [DrivingLicence(owner=owners[i], number=str(i + 1) * 10, type="B", issue_date=timezone.now()) for i in range(6)]
 )
 
-print(f"Автовладельцы: {owners}", f"Автомобили: {cars}", f"Владения: {ownerships}", f"Лицензии: {licences}", sep="\n")
+print(f"Автовладельцы: {owners}", f"Автомобили: {cars}", f"Владения: {ownerships}", f"Лицензии: {licences}", sep="\n\n")
