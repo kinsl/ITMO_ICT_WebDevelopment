@@ -38,7 +38,7 @@
     Затем выведем все полученные объекты и получим следующее:
 
     <figure markdown>
-      ![Задание 1](http://localhost:8000/img/pw3/task1.png)
+      ![Задание 1](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/pw3/task1.png)
     </figure>
 
 === "Задание 2"
@@ -82,7 +82,7 @@
     Затем выведем все полученные объекты и получим следующее:
 
     <figure markdown>
-      ![Задание 2](http://localhost:8000/img/pw3/task2.png)
+      ![Задание 2](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/pw3/task2.png)
     </figure>
 
 === "Задание 3"
@@ -124,5 +124,5 @@
     Затем выведем все полученные объекты и получим следующее:
 
     <figure markdown>
-      ![Задание 3](http://localhost:8000/img/pw3/task3.png)
+      ![Задание 3](https://kinsl.github.io/ITMO_ICT_WebDevelopment/img/pw3/task3.png)
     </figure>
